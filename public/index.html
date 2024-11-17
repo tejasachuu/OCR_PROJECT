@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR API Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OCR API Generator</h1>
+    <button id="generateApiKeyBtn">Generate API Key</button>
+    <p id="apiKey"></p>
+    
+    <h2>Test OCR</h2>
+    <form id="ocrForm">
+      <input type="text" id="userApiKey" placeholder="Enter API Key" required />
+      <input type="file" id="imageInput" accept="image/*" required />
+      <button type="submit">Perform OCR</button>
+    </form>
+    <p id="ocrResult"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
